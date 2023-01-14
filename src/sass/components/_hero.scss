@@ -1,56 +1,63 @@
 .hero {
     text-align: center;
+    // .hero__container
+
+    &__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 225px 0 284px;
+    }
+
+    // .hero__title
+
+    &__title {
+        color: $hero-color;
+        font-size: 55px;
+        font-weight: 300;
+        line-height: 1.2;
+        text-transform: capitalize;
+        margin: 0 0 25px;
+    }
+
+    // .hero__text
+
+    &__text {
+        color: $hero-color;
+        font-size: 22px;
+        line-height: 1.68;
+        margin: 0 0 29px;
+    }
+
+    // .hero__button
+
+    &__button {
+        padding: 10px 30px;
+        margin: 0 auto;
+        @extend %centeredFlex;
+        gap: 5px;
+    
+        font-family: inherit;
+        background-color: $first-btn-color;
+        color: $secondary-color;
+        font-size: 18px;
+        line-height: 1.55;
+        cursor: pointer;
+        border-radius: 5px;
+        border-color: transparent;
+    
+        transition: background-color 250ms $time-function;
+        &:hover, &:focus{
+            background-color: $hover-first-btn-color;
+        }
+    }
+
+    // .hero__icon
+
+    &__icon {
+        fill: $secondary-color;
+        width: 9px;
+        height: 18px;
+    }
 }
 
-.hero-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 225px 0 284px;
-}
-
-.hero-title {
-    color: var(--hero-color);
-    font-size: 55px;
-    font-weight: 300;
-    line-height: 1.2;
-    text-transform: capitalize;
-    margin: 0 0 25px;
-}
-
-.hero-text {
-    color: var(--hero-color);
-    font-size: 22px;
-    line-height: 1.68;
-    margin: 0 0 29px;
-}
-
-.icon-arrow {
-    fill: var(--secondary-color);
-    width: 9px;
-    height: 18px;
-}
-
-.hero-button {
-    padding: 10px 30px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-
-    font-family: inherit;
-    background-color: var(--first-btn-color);
-    color: var(--secondary-color);
-    font-size: 18px;
-    line-height: 1.55;
-    cursor: pointer;
-    border-radius: 5px;
-    border-color: transparent;
-
-    transition: background-color 250ms var(--time-function);
-}
-
-.hero-button:hover,
-.hero-button:focus {
-    background-color: var(--hover-first-btn-color);
-}

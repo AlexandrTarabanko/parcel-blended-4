@@ -1,58 +1,68 @@
-.header-hero-background {
-    background-image: url('../images/header-hero-background.jpg'),
-        linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-    background-size: cover;
-    max-width: 1360px;
-    height: 768px;
-    padding: 0;
-    margin: 0 auto;
+.header {
+
+    // .header__nav
+
+    &__nav {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    // .header__list
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 38px;
+        padding: 21px 0;
+        margin-right: 46px;
+    }
+
+    // .header__item
+
+    // &__item {}
+
+    // .header__link
+
+    &__link {
+        color: $secondary-color;
+        font-size: 18px;
+        line-height: 1.55;
+            
+        transition: color 250ms $time-function;
+        &:hover{
+          color: $link-hover-focus-color;
+        }
+        &:focus{
+          color: $link-hover-focus-color;
+        }
+    }
 }
 
-.nav {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.icon-header {
-    fill: var(--logo-color);
-    width: 40px;
-    height: 43px;
-    margin-right: 10px;
-}
 
 .logo {
     display: flex;
     align-items: center;
     padding: 11px 0 0 50px;
 
-    color: var(--logo-color);
+    color: $logo-color;
     font-size: 35px;
     line-height: 1.2;
     text-align: center;
+    // .logo__icon
+
+    &__icon {
+        fill: $logo-color;
+        width: 40px;
+        height: 43px;
+        margin-right: 10px;
+    }
+
+    // .logo__part
+
+    &__part {
+        color: $secondary-color;
+    }
 }
 
-.logo-part {
-    color: var(--secondary-color);
-}
 
-.nav-list {
-    display: flex;
-    align-items: center;
-    gap: 38px;
-    padding: 21px 0;
-    margin-right: 46px;
-}
-
-.nav-link {
-    color: var(--secondary-color);
-    font-size: 18px;
-    line-height: 1.55;
-
-    transition: color 250ms var(--time-function);
-}
-
-.nav-link:hover,
-.nav-link:focus {
-    color: var(--link-hover-focus-color);
-}
