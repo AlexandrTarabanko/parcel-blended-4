@@ -9,11 +9,38 @@
     <ul class="team-list">
       <li class="team-list__item">
         <div class="team-list__img-thumb">
-          <img
-            class="team-list__img"
-            src="./images/teamphoto1.jpg"
-            alt="phot John Doe"
-          />
+          <picture>
+            <source
+              type="image/jpeg"
+              srcset="
+                ./images/president-mobile.jpg    1x,
+                ./images/president-mobile@2x.jpg 2x
+              "
+              media="(max-width:767px)"
+            />
+            <source
+              type="image/jpeg"
+              srcset="
+                ./images/president-tablet.jpg    1x,
+                ./images/president-tablet@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              type="image/jpeg"
+              srcset="
+                ./images/president-desktop.jpg    1x,
+                ./images/president-desktop@2x.jpg 2x
+              "
+              media="(min-width:1360px)"
+            />
+            <img
+              class="team-list__img"
+              src="./images/president-desktop.jpg"
+              alt="President's photo"
+            />
+          </picture>
+
           <ul class="social-list">
             <li class="social-list__item">
               <a class="social-list__link" href="#" aria-label="Facebook">
@@ -58,11 +85,37 @@
       </li>
       <li class="team-list__item">
         <div class="team-list__img-thumb">
-          <img
-            class="team-list__img"
-            src="./images/teamphoto2.jpg"
-            alt="photo Jane Doe"
-          />
+          <picture>
+            <source
+              type="image/jpeg"
+              srcset="
+                ./images/vice-president-mobile.jpg    1x,
+                ./images/vice-president-mobile@2x.jpg 2x
+              "
+              media="(max-width:767px)"
+            />
+            <source
+              type="image/jpeg"
+              srcset="
+                ./images/vice-president-tablet.jpg    1x,
+                ./images/vice-president-tablet@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              type="image/jpeg"
+              srcset="
+                ./images/vice-president-desktop.jpg    1x,
+                ./images/vice-president-desktop@2x.jpg 2x
+              "
+              media="(min-width:1360px)"
+            />
+            <img
+              class="team-list__img"
+              src="./images/vice-president-desktop.jpg"
+              alt="Vice President's photo"
+            />
+          </picture>
 
           <ul class="social-list">
             <li class="social-list__item">
@@ -108,11 +161,37 @@
       </li>
       <li class="team-list__item">
         <div class="team-list__img-thumb">
-          <img
-            class="team-list__img"
-            src="./images/teamphoto3.jpg"
-            alt="photo Steve Smith"
-          />
+          <picture>
+            <source
+              type="image/jpeg"
+              srcset="
+                ./images/marketing-head-mobile.jpg    1x,
+                ./images/marketing-head-mobile@2x.jpg 2x
+              "
+              media="(max-width:767px)"
+            />
+            <source
+              type="image/jpeg"
+              srcset="
+                ./images/marketing-head-tablet.jpg    1x,
+                ./images/marketing-head-tablet@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              type="image/jpeg"
+              srcset="
+                ./images/marketing-head-desktop.jpg    1x,
+                ./images/marketing-head-desktop@2x.jpg 2x
+              "
+              media="(min-width:1360px)"
+            />
+            <img
+              class="team-list__img"
+              src="./images/marketing-head-desktop.jpg"
+              alt="Marketing Head's photo"
+            />
+          </picture>
 
           <ul class="social-list">
             <li class="social-list__item">
