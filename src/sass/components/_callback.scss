@@ -76,15 +76,15 @@
   border-radius: 5px;
 
   width: 100%;
-  max-width: 260px;
+  // max-width: 260px;
   height: 42px;
 
   cursor: pointer;
   transition: background-color 250ms var(--time-function);
 
-  @media screen and (min-width: 1360px) {
-    width: 620px;
-  }
+  // @media screen and (min-width: 1360px) {
+  //   max-width: 620px;
+  // }
 
   &:hover {
     background-color: $hover-first-btn-color;
