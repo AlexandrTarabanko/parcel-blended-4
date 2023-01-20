@@ -48,9 +48,8 @@
       font-size: 18px;
       line-height: 1.56;
       margin: 0;
-      max-width: 185px;
     }
-    @media screen and (min-width: 1350px) {
+    @media screen and (min-width: 1360px) {
       font-size: 18px;
       line-height: 1.56;
       margin: 0;
@@ -59,11 +58,11 @@
   }
 
   &__list {
+    display: flex;
     flex-direction: column;
 
     @media screen and (min-width: 768px) {
       flex-direction: row;
-      display: flex;
       justify-content: space-around;
       align-items: center;
       gap: 53px;
