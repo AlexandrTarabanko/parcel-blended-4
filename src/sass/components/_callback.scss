@@ -1,64 +1,92 @@
 .request-box {
+  display: block;
+
+  @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1360px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .callback {
+  padding: 156px 30px 30px 30px;
+  background-color: $first-additional-background;
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 30px 30px 30px;
+  }
+
+  @media screen and (min-width: 1360px) {
     padding: 78px 30px 82px 30px;
-    background-color: $first-additional-background;
-
-    &__headline {
-        margin-bottom: 34px;
-
-        color: $primary-color;
-        font-weight: 300;
-        font-size: 38px;
-        line-height: 1.25;
-        text-transform: capitalize;
-    }
-    
-    &__name {
-        width: 100%;
-        padding: 6px 5px 5px 5px;
-        margin-bottom: 36px;
-    
-        background: $main-background;
-        border: 1px solid $first-additional-background;
-        border-radius: 0px;
-    }
-
-    &__email {
-        width: 100%;
-        padding: 6px 5px 5px 5px;
-        margin-bottom: 60px;
-        
-        background: $main-background;
-        border: 1px solid $first-additional-background;
-        border-radius: 0px;
-    }
-                
-    &__button {
-        display: inline-block;
-        
-        color: $secondary-color;
-        background: $second-additional-background;
-        
-        border-color: transparent;
-        border-radius: 5px;
-        
-        width: 620px;
-        height: 42px;
-        
-        cursor: pointer;
-        transition: background-color 250ms var(--time-function);
-
-        &:hover {
-            background-color: $hover-first-btn-color;
-        }
-    }
-            
+  }
 }
 
+.callback__headline {
+  display: none;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 26px;
 
+    color: $primary-color;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.25;
+    text-transform: capitalize;
+  }
 
+  @media screen and (min-width: 1360px) {
+    margin-bottom: 34px;
+  }
+}
 
+.callback__name {
+  width: 100%;
+  padding: 6px 5px 5px 5px;
+  margin-bottom: 36px;
+
+  background: $main-background;
+  border: 1px solid $first-additional-background;
+  border-radius: 0px;
+}
+
+.callback__email {
+  width: 100%;
+  padding: 6px 5px 5px 5px;
+  margin-bottom: 60px;
+
+  background: $main-background;
+  border: 1px solid $first-additional-background;
+  border-radius: 0px;
+}
+
+.callback__button {
+  display: inline-block;
+
+  color: $secondary-color;
+  background: $second-additional-background;
+
+  border-color: transparent;
+  border-radius: 5px;
+
+  width: 100%;
+  // max-width: 260px;
+  height: 42px;
+
+  cursor: pointer;
+  transition: background-color 250ms var(--time-function);
+
+  // @media screen and (min-width: 1360px) {
+  //   max-width: 620px;
+  // }
+
+  &:hover {
+    background-color: $hover-first-btn-color;
+  }
+}
