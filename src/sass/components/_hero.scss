@@ -1,12 +1,23 @@
 .hero {
     text-align: center;
+    
     // .hero__container
 
     &__container {
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding: 225px 0 284px;
+
+        padding: 44px 0 95px;
+    
+        @media screen and (min-width:768px) {
+            // padding: 353px 0 412px;
+            padding: 250px 0 260px;
+        }
+    
+        @media screen and (min-width:1360px) {
+            padding: 225px 0 284px;
+        }
     }
 
     // .hero__title
@@ -40,8 +51,8 @@
         font-family: inherit;
         background-color: $first-btn-color;
         color: $secondary-color;
-        font-size: 18px;
-        line-height: 1.55;
+        font-size: 16px;
+        line-height: 1.625;
         cursor: pointer;
         border-radius: 5px;
         border-color: transparent;
@@ -49,6 +60,11 @@
         transition: background-color 250ms $time-function;
         &:hover, &:focus{
             background-color: $hover-first-btn-color;
+        }
+
+        @media screen and (min-width:768px){
+            font-size: 18px;
+            line-height: 1.55;
         }
     }
 
