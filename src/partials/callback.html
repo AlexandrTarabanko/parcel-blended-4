@@ -1,11 +1,37 @@
 <section class="request">
   <div class="container">
     <div class="request-box">
-      <img
-        src="./images/request-callback.jpg"
-        alt="request-callback"
-        width="680"
-      />
+      <picture>
+        <source
+          srcset="
+            ./images/request-callback-desktop@1x.jpg 1x,
+            ./images/request-callback-desktop@2x.jpg 2x
+          "
+          media="(min-width:1360px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/request-callback-tablet@1x.jpg 1x,
+            ./images/request-callback-tablet@2x.jpg 2x
+          "
+          media="(min-width:768px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/request-callback-mobile@1x.jpg 1x,
+            ./images/request-callback-mobile@2x.jpg 2x
+          "
+          media="(min-width:320px)"
+          type="image/jpeg"
+        />
+        <img
+          src="./images/request-callback-mobile@1x.jpg"
+          alt="request-callback"
+        />
+      </picture>
+
       <div class="callback">
         <h2 class="callback__headline">Request callback</h2>
         <form class="callback__form" action="#" method="get">
