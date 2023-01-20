@@ -1,30 +1,61 @@
-.provide{
+// .provide{
 
-}
+// }
 
 .provide__container {
-    background-color: $second-additional-background;
-    @extend %centeredFlex;
-    color: $secondary-color;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
     max-height: 460px;
     width: 1360px;
+
+    color: $secondary-color;
+    background-color: $second-additional-background;
+
+    @media screen and (min-width:768px) {
+
+    }
+    @media screen and (min-width:1360px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
 }
 
-.provide__img {
-    display: inline-block;
-    width: 680px;
-}
+// .provide__img {
+//     display: inline-block;
+//     width: 680px;
+// }
 
 .provide__text-container {
-    padding: 84px 44px 84px 30px;
-    width: 680px;
-    max-height: 460px;
+    padding: 30px;
+    width: 320px;
+    max-height: 540px;
+    
+    @media screen and (min-width:768px) {
+        padding: 30px 40px 30px 30px;
+        width: 384px;
+        max-height: 564px;
+    }
+    @media screen and (min-width:1360px) {
+        padding: 84px 44px 84px 30px;
+        width: 680px;
+        max-height: 460px;
+    }
 }
 
 .provide__subtitle {
-    font-size: 20px;
-    line-height: 1.65;
+    font-size: 18px;
+    line-height: 1.66;
+
     margin: 0 0 5px;
+
+    @media screen and (min-width:768px) {
+        font-size: 20px;
+        line-height: 1.65;
+    }
 }
 
 .provide__title {
@@ -36,9 +67,15 @@
 }
 
 .provide__text {
-    font-size: 18px;
-    line-height: 1.56;
+    font-size: 16px;
+    line-height: 1.625;
+
     margin: 0 0 17px;
+
+    @media screen and (min-width:768px) {
+        font-size: 18px;
+        line-height: 1.56;
+    }
 }
 
 .provide__details {
@@ -58,10 +95,15 @@
 .provide__details-text {
     list-style: none;
     width: 97px;
-    font-size: 18px;
-    line-height: 1.56;
+    font-size: 16px;
+    line-height: 1.625;
     color: $secondary-color;
 
     padding: 11px 27px 12px 42px;
     width: 167px;
+
+    @media screen and (min-width:768px) {
+        font-size: 18px;
+        line-height: 1.56;
+    }
 }

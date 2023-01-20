@@ -1,11 +1,35 @@
 <section class="provide">
   <div class="provide__container container">
-    <img
-      class="provide__img"
-      src="./images/team-photo.jpg"
-      alt="Team photo"
-      width="680"
-    />
+    <picture>
+      <source
+        type="image/jpeg"
+        srcset="
+          ./images/team-photo-desktop.jpg    1x,
+          ./images/team-photo-desktop@2x.jpg 2x
+        "
+        media="(min-width:1360px)"
+      />
+      <source
+        type="image/jpeg"
+        srcset="
+          ./images/team-photo-tablet.jpg    1x,
+          ./images/team-photo-tablet@2x.jpg 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        type="image/jpeg"
+        srcset="
+          ./images/team-photo-mobile.jpg    1x,
+          ./images/team-photo-mobile@2x.jpg 2x
+        "
+      />
+      <img
+        class="provide__img"
+        src="./images/team-photo-desktop.jpg"
+        alt="Team photo"
+      />
+    </picture>
     <div class="provide__text-container">
       <p class="provide__subtitle">What you are looking for</p>
       <h2 class="provide__title">We provide bespoke solutions</h2>
